@@ -97,7 +97,7 @@ async function signbars(bars) {
                     bar.iscurSign = true
                     bar.issignSuc = false
                     bar.signNo = null
-                    bar.signMsg = err !== null ? error : e
+                    bar.signMsg = err !== null ? e : e
                     $.logErr(e, resp)
                 } finally {
                     for (var i = 0; i < jump.length; i++) {
